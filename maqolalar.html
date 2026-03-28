@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqolalar va Xotiralar - G'afur G'ulom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at top right, #1e293b 0%, #0f172a 100%);
+        }
+        h1, h2, h3, .literary-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Maqola kartalari uchun maxsus hover effekti */
+        .article-card:hover {
+            box-shadow: 0 0 30px rgba(251, 191, 36, 0.1);
+            border-color: rgba(251, 191, 36, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-slate-900 min-h-screen flex flex-col">
+
+    <nav class="sticky top-0 z-50 glass-panel border-b-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 cursor-pointer text-2xl font-bold literary-font tracking-wider text-amber-400">
+                    G'.G'ulom
+                </div>
+                <div>
+                    <a href="index.html" class="group flex items-center gap-2 text-sm uppercase tracking-widest font-semibold text-gray-300 hover:text-amber-400 transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                        Asosiy sahifa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-16 text-center px-4 reveal">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white tracking-tight">
+            MAQOLALAR VA <span class="text-amber-500">XOTIRALAR</span>
+        </h1>
+        <div class="h-1 w-32 bg-amber-500 mx-auto mb-6 rounded-full opacity-70"></div>
+        <p class="text-lg md:text-xl font-light text-gray-400 max-w-2xl mx-auto literary-font italic">
+            Zamondoshlari, shogirdlari va adabiyotshunoslar nigohida...
+        </p>
+    </header>
+
+    <main class="flex-grow px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-24 w-full">
+        
+        <div class="mb-20">
+            <div class="flex items-center gap-4 mb-10 reveal">
+                <div class="w-3 h-8 bg-amber-500 rounded-full"></div>
+                <h2 class="text-3xl font-bold text-white uppercase tracking-widest">Ilmiy Tadqiqotlar</h2>
+                <div class="h-px bg-white/10 flex-grow"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="glass-panel p-8 rounded-2xl reveal article-card transition duration-500 flex flex-col border-l-4 border-l-amber-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-amber-500 text-xs font-bold uppercase tracking-wider px-3 py-1 bg-amber-500/10 rounded-full">Ilmiy maqola</span>
+                        <span class="text-gray-500 text-sm">2026-yil</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">O’ZBEK ADABIYOTIDA G’AFUR G’ULOMNING O’RNI</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed flex-grow text-justify">
+                        O’zbek xalqining taniqli va sevimli yozuvchisi G’afur G’ulomning she’riyati
+                        va nasrida o’zbek xalqi tarixi o’zining badiiy timsolini topgan.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-auto pt-4 border-t border-white/10">
+                        <a href="fayllar/ilmiy_maqola_1.pdf" download class="text-amber-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> PDF Yuklab olish
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl reveal article-card transition duration-500 flex flex-col border-l-4 border-l-blue-500" style="transition-delay: 100ms;">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-blue-400 text-xs font-bold uppercase tracking-wider px-3 py-1 bg-blue-500/10 rounded-full">Ilmiy maqola</span>
+                        <span class="text-gray-500 text-sm">2026-yil</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">G’AFUR G’ULOM MAHORATLI TARJIMON</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed flex-grow text-justify">
+                        Mazkur maqolada G‘afur G‘ulomningo‘zbekadabiyotidagi tarjimonlik faoliyati tahlil qilinadi. Undaadibning badiiy tarjimaga ijodiy yondashuvi, tarjimajarayonida asarning g‘oyaviy mazmuni, badiiyxususiyatlari hamda muallif uslubini saqlashgabo‘lganintilishi yoritiladi. G‘afur G‘ulomtomonidanPushkin, Lermontov, Mayakovskiy, Shekspir kabi jahonadabiyotinamoyandalarining asarlarini o‘zbek tiligatarjimaqilishdagi mahorati ko‘rsatib beriladi. Ayniqsa, Shekspirtragediyalarining tarjimasida obrazlar xarakterini, his-tuyg‘ular nutqini va dramatik harakatni to‘liqaksettirish masalalariga alohida e’tibor qaratiladi. Maqolada tarjimada personajlar erkinligi, nutqningjonliligi va realistik tasvir muhimmezonsifatidabaholanadi. Tadqiqot G‘afur G‘ulomning so‘zsan’atiustasi va yetuk tarjimon sifatidagi o‘rnini asoslashgaxizmat qiladi.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-auto pt-4 border-t border-white/10">
+                        <a href="fayllar/YO ITJ.pdf" download class="text-blue-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> PDF Yuklab olish
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl reveal article-card transition duration-500 flex flex-col border-l-4 border-l-purple-500">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-purple-400 text-xs font-bold uppercase tracking-wider px-3 py-1 bg-purple-500/10 rounded-full">Maqola</span>
+                        <span class="text-gray-500 text-sm">2026-yil</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">G’AFUR G’ULOM TARJIMALARIDA SO‘Z TANLASHMAHORATI (“QIROL LIR” TARJIMASI MISOLIDA)</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed flex-grow text-justify">
+                        Mazkur maqolada G‘afur G‘ulomning tarjimonlikfaoliyatida so‘z tanlash masalasi VilyamShekspirning“Qirol Lir” asari tarjimasi asosida tahlil qilinadi. Tadqiqotda G‘afur G‘ulomning bilvositatarjimajarayonida badiiylik, milliylik va o‘zbekonaruhnisaqlashga qaratilgan yondashuvi yoritiladi. Asardauning tarjimalarida leksik birliklardan, o‘xshatishvaobrazlardan foydalanish usullari Jamol Kamolningbevosita ingliz tilidan qilgan tarjimasi bilanqiyosiyjihatdan ko‘rib chiqiladi. Tahlil jarayonidaG‘afurG‘ulomning xalq og‘zaki ijodi, maqol varamziyobrazlarga tayangan holda matnni o‘quvchigayaqinlashtirgani asoslab beriladi. Maqoladatarjimonlarning individual uslubi, so‘z tanlashdagifarqlar va ularning asar mazmuniga ta’siri ilmiydalillar asosida ochib beriladi.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-auto pt-4 border-t border-white/10">
+                        <a href="fayllar/CAJMRMS.pdf" download class="text-purple-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> PDF Yuklab olish
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl reveal article-card transition duration-500 flex flex-col border-l-4 border-l-emerald-500" style="transition-delay: 100ms;">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider px-3 py-1 bg-emerald-500/10 rounded-full">Ilmiy maqola</span>
+                        <span class="text-gray-500 text-sm">2026-yil</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">DESPITE THE DIFFICULTIES OF LIFE, THE WRITER NEVER TIRED
+                        OF SEARCHING FOR KNOWLEDGE</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed flex-grow text-justify">
+                        Academician Gafur Ghulom, our famous and honored writer, who made a
+                        great contribution to the development of Uzbek literature, was born in 1903 in
+                        the Korgontegi neighborhood of Tashkent.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-auto pt-4 border-t border-white/10">
+                        <a href="fayllar/ilmiy_meros.pdf" download class="text-emerald-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> PDF Yuklab olish
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mb-10">
+            <div class="flex items-center gap-4 mb-10 reveal">
+                <div class="w-3 h-8 bg-rose-500 rounded-full"></div>
+                <h2 class="text-3xl font-bold text-white uppercase tracking-widest"></h2>
+                <div class="h-px bg-white/10 flex-grow"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="glass-panel p-6 rounded-2xl reveal hover:-translate-y-2 transition-all duration-300 border-t-2 border-rose-500 flex flex-col">
+                    <div class="w-12 h-12 bg-rose-500/20 rounded-full flex items-center justify-center mb-4 text-rose-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">.............</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow text-justify">...........</p>
+                    <a href="fayllar/xotira_said_ahmad.pdf" download class="text-rose-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        Yuklab olish &rarr;
+                    </a>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl reveal hover:-translate-y-2 transition-all duration-300 border-t-2 border-cyan-500 flex flex-col" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mb-4 text-cyan-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">........</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow text-justify">..........</p>
+                    <a href="fayllar/xotira_farzandlari.pdf" download class="text-cyan-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        Yuklab olish &rarr;
+                    </a>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl reveal hover:-translate-y-2 transition-all duration-300 border-t-2 border-yellow-500 flex flex-col" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center mb-4 text-yellow-500">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">.........</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow text-justify">........</p>
+                    <a href="fayllar/xotira_dostlik.pdf" download class="text-yellow-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        Yuklab olish &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="glass-panel mt-auto border-t border-white/10 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+            <p>&copy; 2026 G'afur G'ulom - Maqolalar bazasi.</p>
+            <p>Ilm-fan va adabiyot yo'lida xizmat qiladi.</p>
+        </div>
+    </footer>
+
+    <script>
+        function revealElements() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(reveal => {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveal.getBoundingClientRect().top;
+                const elementVisible = 50; 
+                if (elementTop < windowHeight - elementVisible) {
+                    reveal.classList.add('active');
+                }
+            });
+        }
+        window.addEventListener('scroll', revealElements);
+        setTimeout(revealElements, 100);
+    </script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcha Asarlari - G'afur G'ulom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%);
+        }
+        h1, h2, h3, .literary-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-500 selection:text-slate-900 min-h-screen flex flex-col">
+
+    <nav class="sticky top-0 z-50 glass-panel border-b-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 cursor-pointer text-2xl font-bold literary-font tracking-wider text-amber-400">
+                    G'.G'ulom
+                </div>
+                <div>
+                    <a href="index.html" class="group flex items-center gap-2 text-sm uppercase tracking-widest font-semibold text-gray-300 hover:text-amber-400 transition duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                        Asosiy sahifa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-16 text-center px-4 reveal">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 text-white tracking-tight">
+            BARCHA <span class="text-amber-500">ASARLARI</span>
+        </h1>
+        <div class="h-1 w-24 bg-amber-500 mx-auto mb-6 rounded-full opacity-70"></div>
+        <p class="text-lg md:text-xl font-light text-gray-400 max-w-2xl mx-auto literary-font italic">
+            "Besh qo'l baravar emas, lekin beshalasi ham o'zimizniki..."
+        </p>
+    </header>
+
+    <main class="flex-grow px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pb-24 w-full">
+        
+        <div class="mb-24">
+            <div class="flex items-center gap-4 mb-10 reveal">
+                <h2 class="text-3xl font-bold text-amber-400 uppercase tracking-widest">Nasriy Asarlar</h2>
+                <div class="h-px bg-white/10 flex-grow"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="glass-panel rounded-2xl overflow-hidden reveal hover:-translate-y-2 transition-all duration-500 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://i.ytimg.com/vi/afCFvAnCdmA/maxresdefault.jpg" alt="Shum bola" class="w-full h-full object-cover opacity-70 bg-slate-800">
+                        <div class="absolute bottom-0 w-full p-4 bg-gradient-to-t from-slate-900 to-transparent">
+                            <span class="bg-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Qissa</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">Shum bola</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">O'tgan asr boshlaridagi Toshkent hayoti va sho'x bolaning sarguzashtlari o'ziga xos mutoyiba bilan yoritilgan shoh asar.</p>
+                        <a href="fayllar/shum-bola.pdf" download class="w-full flex items-center justify-center gap-2 border border-amber-500/50 text-amber-400 hover:bg-amber-500 hover:text-slate-900 transition-all py-3 rounded-xl font-semibold text-sm uppercase tracking-wider">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Yuklab olish
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden reveal hover:-translate-y-2 transition-all duration-500 flex flex-col" style="transition-delay: 100ms;">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://i.ytimg.com/vi/IeUOXFWKiPU/maxresdefault.jpg" alt="Yodgor" class="w-full h-full object-cover opacity-70 bg-slate-800">
+                        <div class="absolute bottom-0 w-full p-4 bg-gradient-to-t from-slate-900 to-transparent">
+                            <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Qissa</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">Yodgor</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Yangi jamiyat qurilishi, mehnat va hayotning mazmuni haqida chuqur falsafiy mushohadalarga boy qissa.</p>
+                        <a href="fayllar/yodgor.pdf" download class="w-full flex items-center justify-center gap-2 border border-blue-500/50 text-blue-400 hover:bg-blue-500 hover:text-slate-900 transition-all py-3 rounded-xl font-semibold text-sm uppercase tracking-wider">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Yuklab olish
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden reveal hover:-translate-y-2 transition-all duration-500 flex flex-col" style="transition-delay: 200ms;">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="data:image/jpeg;base64,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" alt="Netay" class="w-full h-full object-cover opacity-70 bg-slate-800">
+                        <div class="absolute bottom-0 w-full p-4 bg-gradient-to-t from-slate-900 to-transparent">
+                            <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Qissa</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">Netay</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Chorizm davridagi nohaqliklar qurboni bo'lgan begunoh va yetim qiz qismati haqida juda ta'sirli asar.</p>
+                        <a href="fayllar/netay.pdf" download class="w-full flex items-center justify-center gap-2 border border-purple-500/50 text-purple-400 hover:bg-purple-500 hover:text-slate-900 transition-all py-3 rounded-xl font-semibold text-sm uppercase tracking-wider">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Yuklab olish
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden reveal hover:-translate-y-2 transition-all duration-500 flex flex-col">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="data:image/jpeg;base64,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" alt="Mening o'g'rigina bolam" class="w-full h-full object-cover opacity-70 bg-slate-800">
+                        <div class="absolute bottom-0 w-full p-4 bg-gradient-to-t from-slate-900 to-transparent">
+                            <span class="bg-teal-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Hikoya</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">Mening o'g'rigina bolam</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">Urush yillaridagi yetishmovchilik, odamiylik va kechirimli bo'lish haqidagi o'ta ibratli hikoya.</p>
+                        <a href="fayllar/ogrigina-bolam.pdf" download class="w-full flex items-center justify-center gap-2 border border-teal-500/50 text-teal-400 hover:bg-teal-500 hover:text-slate-900 transition-all py-3 rounded-xl font-semibold text-sm uppercase tracking-wider">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Yuklab olish
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden reveal hover:-translate-y-2 transition-all duration-500 flex flex-col" style="transition-delay: 100ms;">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="data:image/jpeg;base64,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" alt="Hasan Kayfiy" class="w-full h-full object-cover opacity-70 bg-slate-800">
+                        <div class="absolute bottom-0 w-full p-4 bg-gradient-to-t from-slate-900 to-transparent">
+                            <span class="bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Hikoya</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">Hasan Kayfiy</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">O'zbek xalqiga xos bo'lgan hazil-mutoyiba va qahramonning turli qiziqarli vaziyatlarga tushishi tasvirlangan bitik.</p>
+                        <a href="fayllar/hasan-kayfiy.pdf" download class="w-full flex items-center justify-center gap-2 border border-orange-500/50 text-orange-400 hover:bg-orange-500 hover:text-slate-900 transition-all py-3 rounded-xl font-semibold text-sm uppercase tracking-wider">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Yuklab olish
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-2xl overflow-hidden reveal hover:-translate-y-2 transition-all duration-500 flex flex-col" style="transition-delay: 200ms;">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="data:image/jpeg;base64,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" alt="Asal va tengdoshlari" class="w-full h-full object-cover opacity-70 bg-slate-800">
+                        <div class="absolute bottom-0 w-full p-4 bg-gradient-to-t from-slate-900 to-transparent">
+                            <span class="bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">To'plam</span>
+                        </div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-2xl font-bold text-white mb-2">Asal va tengdoshlari</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-6 flex-grow">G'afur G'ulomning yoshlar va bolalar uchun yozilgan eng saralangan nasriy hikoyalar to'plami.</p>
+                        <a href="fayllar/asal-va-tengdoshlari.pdf" download class="w-full flex items-center justify-center gap-2 border border-indigo-500/50 text-indigo-400 hover:bg-indigo-500 hover:text-slate-900 transition-all py-3 rounded-xl font-semibold text-sm uppercase tracking-wider">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            Yuklab olish
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mb-10">
+            <div class="flex items-center gap-4 mb-10 reveal">
+                <h2 class="text-3xl font-bold text-amber-400 uppercase tracking-widest">She'rlar va Dostonlar</h2>
+                <div class="h-px bg-white/10 flex-grow"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="glass-panel p-6 rounded-2xl reveal hover:bg-white/5 transition duration-300 border-t-2 border-amber-500 flex flex-col">
+                    <span class="text-amber-500 text-xs font-bold uppercase tracking-wider mb-2 block">She'r</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Sen yetim emassan</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Urush yetimlari dardi va o'zbek xalqining bag'rikengligini madh etuvchi asar.</p>
+                    <a href="fayllar/sen-yetim-emassan.pdf" download class="text-amber-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> Faylni yuklash
+                    </a>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl reveal hover:bg-white/5 transition duration-300 border-t-2 border-emerald-500 flex flex-col" style="transition-delay: 100ms;">
+                    <span class="text-emerald-500 text-xs font-bold uppercase tracking-wider mb-2 block">She'r</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Vaqt</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Inson umrining g'animatligi, vaqtning shiddatli oqimi va uning qadri haqida mushohada.</p>
+                    <a href="fayllar/vaqt.pdf" download class="text-emerald-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> Faylni yuklash
+                    </a>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl reveal hover:bg-white/5 transition duration-300 border-t-2 border-rose-500 flex flex-col" style="transition-delay: 200ms;">
+                    <span class="text-rose-500 text-xs font-bold uppercase tracking-wider mb-2 block">She'r</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Sog'inish</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Urushda qurbon bo'lgan jigarbandini kutayotgan onaning iztiroblari va umidi tasviri.</p>
+                    <a href="fayllar/soginish.pdf" download class="text-rose-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> Faylni yuklash
+                    </a>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl reveal hover:bg-white/5 transition duration-300 border-t-2 border-cyan-500 flex flex-col">
+                    <span class="text-cyan-500 text-xs font-bold uppercase tracking-wider mb-2 block">Doston</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Ko'kan</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Yangi hayot quruvchilari, mehnatkash insonlarning madhi va matonati tarannumi.</p>
+                    <a href="fayllar/kokan.pdf" download class="text-cyan-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> Faylni yuklash
+                    </a>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl reveal hover:bg-white/5 transition duration-300 border-t-2 border-fuchsia-500 flex flex-col" style="transition-delay: 100ms;">
+                    <span class="text-fuchsia-500 text-xs font-bold uppercase tracking-wider mb-2 block">She'r</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Bizning ko'chada ham bayram bo'lajak</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Erkinlik, yorug' kelajakka bo'lgan qat'iy ishonch va optimistik ruhdagi asar.</p>
+                    <a href="fayllar/bizning-kochada.pdf" download class="text-fuchsia-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> Faylni yuklash
+                    </a>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl reveal hover:bg-white/5 transition duration-300 border-t-2 border-yellow-400 flex flex-col" style="transition-delay: 200ms;">
+                    <span class="text-yellow-400 text-xs font-bold uppercase tracking-wider mb-2 block">She'r</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Kuzgi ko'chatlar</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Tabiat manzaralari orqali inson umri va uning kelajak avlodga qoldiradigan izi.</p>
+                    <a href="fayllar/kuzgi-kochatlar.pdf" download class="text-yellow-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> Faylni yuklash
+                    </a>
+                </div>
+
+                 <div class="glass-panel p-6 rounded-2xl reveal hover:bg-white/5 transition duration-300 border-t-2 border-lime-400 flex flex-col">
+                    <span class="text-lime-400 text-xs font-bold uppercase tracking-wider mb-2 block">She'r</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Qish</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Qishning go'zalligi va qahraton sovuqdagi insoniy munosabatlar iliqligi tarannumi.</p>
+                    <a href="fayllar/qish.pdf" download class="text-lime-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> Faylni yuklash
+                    </a>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl reveal hover:bg-white/5 transition duration-300 border-t-2 border-pink-500 flex flex-col" style="transition-delay: 100ms;">
+                    <span class="text-pink-500 text-xs font-bold uppercase tracking-wider mb-2 block">She'r</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Yigitlarga</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Yosh avlodga qaratilgan chaqiriq, mardlik, jasorat va vatanga sadoqat tuyg'usi.</p>
+                    <a href="fayllar/yigitlarga.pdf" download class="text-pink-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> Faylni yuklash
+                    </a>
+                </div>
+
+                <div class="glass-panel p-6 rounded-2xl reveal hover:bg-white/5 transition duration-300 border-t-2 border-sky-400 flex flex-col" style="transition-delay: 200ms;">
+                    <span class="text-sky-400 text-xs font-bold uppercase tracking-wider mb-2 block">To'plam</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Sharqdan kelayotirman</h3>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">Adibning xorij safarlari va Sharq xalqlari hayotiga bag'ishlangan eng mashhur to'plami.</p>
+                    <a href="fayllar/sharqdan.pdf" download class="text-sky-400 hover:text-white transition flex items-center gap-2 text-sm font-semibold uppercase">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg> Faylni yuklash
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="glass-panel mt-auto border-t border-white/10 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-gray-500 text-sm">
+            &copy; 2026 G'afur G'ulom - Barcha huquqlar himoyalangan. Dastur mukammalligi uchun yaratilgan.
+        </div>
+    </footer>
+
+    <script>
+        function revealElements() {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(reveal => {
+                const windowHeight = window.innerHeight;
+                const elementTop = reveal.getBoundingClientRect().top;
+                const elementVisible = 50; 
+                if (elementTop < windowHeight - elementVisible) {
+                    reveal.classList.add('active');
+                }
+            });
+        }
+        window.addEventListener('scroll', revealElements);
+        // Boshlang'ich holatda animatsiya yuklanishi uchun
+        setTimeout(revealElements, 100);
+    </script>
+</body>
+</html>
